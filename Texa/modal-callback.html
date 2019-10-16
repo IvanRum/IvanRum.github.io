@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>TEXA - Заказать обратный звонок</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <section class="modal-callback-page">
+      <h1 class="modal-title">Закажите обратный звонок</h1>
+        <p class="modal-text">И мы перезвоним Вам в течение рабочего дня</p> 
+          <form class="callback-form" action="call.php" method="post" name="order_form" target="_parent">
+            <p>
+              <label class="callback-input-title" for="name">Как к вам обращаться:</label>
+              <input class="callback-input" name="name" type="text" placeholder="Ваше имя" required>
+            </p>
+            <p>
+              <label class="callback-input-title" for="phone">Контактный номер телефона:</label>
+              <input class="callback-input" name="phone" id="Editbox2" type="tel" placeholder="Ваш телефон" required>
+            </p>
+            <button class="button callback-submit">Заказать звонок</button>
+          </form>
+          <a class="modal-close" href="index.html"><span class="visually-hidden">Закрыть</span></a>
+    </section>
+  </body>
